@@ -1,0 +1,464 @@
+/*
+Theme Name: Escoteiros do Brasil
+Theme URI: www.escoteiros.org.br
+Description: Escoteiros do Brasil - Educação e lazer para crianças e jovens
+Author: Escoteiros do Brasil - Comissão Nacional de Imagem e Comunicação
+Author URI: Escoteiros do Brasil - Comissão Nacional de Imagem e Comunicação
+*/
+/* ------- GERAL ------- */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	border: none;
+	line-height: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: Verdana, Geneva, sans-serif;
+}
+/***************************************************************************************
+  FONTES
+****************************************************************************************/
+@font-face {
+    font-family: 'Museo300-Regular-webfont';
+	src:url(../fonts/Museo300-Regular-webfont.eot);
+	src:url(../fonts/Museo300-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo300-Regular-webfont.woff) format('woff'),
+	url(../fonts/museosans-300-webfont.svg) format('svg');
+    font-weight: bold;
+	font-style:normal;
+}
+@font-face {
+    font-family: 'Museo500-Regular-webfont';
+	src:url(../fonts/Museo500-Regular-webfont.eot);
+	src:url(../fonts/Museo500-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo500-Regular-webfont.woff) format('woff'),
+	url(../fonts/museosans-500-webfont.svg) format('svg');
+    font-weight: bold;
+	font-style:normal;
+
+}
+@font-face {
+    font-family: 'Museo700';
+	src:url(../fonts/Museo700-Regular-webfont.eot);
+	src:url(../fonts/Museo700-Regular-webfont.ttf) format('truetype'),
+	url(../fonts/Museo700-Regular-webfont.woff) format('woff');
+    font-weight: bold;
+	font-style:normal;
+
+}
+@font-face {
+    font-family: 'museo900';
+    src: url('../fonts/museo900-regular-webfont.eot');
+    src: url('../fonts/museo900-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/museo900-regular-webfont.woff2') format('woff2'),
+         url('../fonts/museo900-regular-webfont.woff') format('woff'),
+         url('../fonts/museo900-regular-webfont.ttf') format('truetype'),
+         url('../fonts/museo900-regular-webfont.svg#museo900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ------- FONTS ------- */
+$Museo300: 'Museo300-Regular-webfont';
+$Museo500: 'Museo500-Regular-webfont';
+$Museo700: 'Museo700';
+$Museo900: 'museo900';
+
+/* ------- COLORS ------- */
+$Branco: white;
+$Preto: black;
+$Bordo: #702426;
+$Cinza: #f6f6f6;
+
+/* ------- FUNCTIONS ------- */
+%fontextralight {
+  font-weight:200; 
+}
+%fontmedium {
+  font-weight:400; 
+}
+%fontnormal {
+  font-weight:300; 
+}
+@mixin model($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin percento {
+	width: 100%;
+}
+
+/* ------- CLASSES ------- */
+.clear {
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: 0px;
+}
+.center{
+  margin: 0 auto;float: none;text-align: center;} 
+ 
+
+.modal-open {
+  overflow: hidden;
+  padding-right: 0px !important;
+}
+.modal-dialog{
+	 z-index: 99999 !important;
+}   
+
+/***************************************************************************************
+  BASE
+  ****************************************************************************************/
+body {
+ width: 100%;
+ margin-top:-2px;
+ overflow-x:hidden !important;
+ overflow-y:hidden !important;
+ background: url(../img/bkg.png)center bottom fixed;
+}
+
+img{max-width: 100%;}
+
+.imgcenter{display: block;margin: 0px auto;}
+
+h1, h2, h3, p, a{font-family: $Museo300;}
+
+a{color:#777;}
+
+
+:focus {outline:none !important;text-decoration: none !important;}
+
+.btn-info{
+	background:url(../img/pattern_incentive.png)repeat !important;
+    border-color: #495e38;
+    &:hover{background-color: #495e38;
+    border-color: #495e38;}
+}
+
+.btn-green{
+	background:url(../img/pattern_incentive.png)repeat !important;
+	border: none;
+}
+
+/***************************************************************************************
+  TOPO
+  ****************************************************************************************/
+.topo{
+	background: #495e38;
+	height: 30px;
+    webkit-box-shadow: -3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: -3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: -3px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    padding-top: 5px;
+    a{color:fff;}
+}
+.topo-meio{
+	margin-bottom:20px;
+	.bloco-logo{
+		background: url(../img/papel_pattern_b.png)repeat !important;
+		border-radius: 0px 0px 10px 10px;
+		box-shadow: 0px 10px 20px 2px black;
+		img{padding:10px;}
+	}
+}
+/***************************************************************************************
+  MENU
+  ****************************************************************************************/
+
+.navbar-toggle { background:url(../img/pattern_incentive.png)repeat !important; border: #00995d !important; }
+
+.icon-bar { background: white !important; }
+  
+.navbar-collapse{
+	padding-left:0px !important;
+}
+.navbar-default{
+	background: url(../img/papel_pattern_b.png)repeat !important;
+	border: none !important;
+	-webkit-box-shadow: inset 0px -5px 7px -2px rgba(50, 50, 50, 0.38);
+    -moz-box-shadow: inset 0px -5px 7px -2px rgba(50, 50, 50, 0.38);
+    box-shadow: inset 0px -5px 7px -2px rgba(50, 50, 50, 0.38);
+	/* overflow: hidden; */
+   .active > a{background:url(../img/pattern_incentive.png)repeat !important;color:$Branco !important;}
+	ul{
+    	li{
+    	&:hover{background:url(../img/pattern_incentive.png)repeat !important;&:first-child{border-radius: 10px 0px 0px 10px;}}}
+    	
+    	a{&:hover{color:$Branco !important;}}
+    }
+    .dropdown-menu{background:url(../img/papel_pattern_b.png)repeat !important;}
+	.navbar-nav > li > .dropdown-menu{width: 100%;}
+	.dropdown-menu > li > a{text-transform: none;}
+	.dropdown-menu > li{list-style: none !important;display: block !important; margin-left: 0px; border-radius:0px !important; }
+	.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{color:$Branco !important;background-color: #282828 !important;}
+	a.dropdown-toggle{
+		padding-bottom: 12px !important;
+		&:hover{background:url(../img/pattern_incentive.png)repeat !important;}
+		&:focus{background:url(../img/pattern_incentive.png)repeat !important;}
+		&:active{background:url(../img/pattern_incentive.png)repeat !important;}
+	}
+	.nav .open>a{
+		background:url(../img/pattern_incentive.png)repeat !important;
+		color:$Branco !important;
+		&:hover{background:url(../img/pattern_incentive.png)repeat !important; color:$Branco !important;}
+		&:focus{background:url(../img/pattern_incentive.png)repeat !important; color:$Branco !important;}
+		&:active{background:url(../img/pattern_incentive.png)repeat !important; color:$Branco !important;}
+	}
+	
+	.dropdown-menu>li>a:hover{color:$Branco !important;text-decoration:none;background:transparent;}
+}
+@media screen and (max-width: 990px) {
+	.navbar-nav>li>a{
+		margin-left: 30px;
+	}
+}
+/***************************************************************************************
+  SLIDE
+  ****************************************************************************************/
+.slide{
+	position: relative; top: -22px;
+	overflow:hidden;
+	-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;box-shadow: 0px 0px 20px 5px #000;
+} 
+
+/***************************************************************************************
+  NEWS HOME
+****************************************************************************************/
+.noticias{
+	h2{color:$Branco;}
+	.box-home { margin-bottom: 10px; overflow-wrap: break-word; padding: 0 15px; height: 220px; overflow: hidden; }
+	.box-home figure { height: 190px; overflow: hidden; width: 100%; position: relative; }
+	.box-home figure img { min-height: 100%; min-width: 100%; width: auto; height: auto; }
+	.box-home figure figcaption { position: absolute; bottom: 0px; text-align: left; width: 100%; color: #ffffff; font-weight: bold; background-color: rgba(0, 0, 0, 0.8); padding: 10px 10px 15px; transition: ease-in-out 0.5s; -moz-transition: ease-in-out 0.5s; -webkit-transition: ease-in-out 0.5s; -o-transition: ease-in-out 0.5s; }
+	.box-home figure figcaption p { margin: 0x; font-size: 16px; letter-spacing: 0.9px; }
+	.box-home figure figcaption a { background-color: transparent; border: 1px solid #ffffff; border-radius: 4px; color: #ffffff; font-weight: bold; text-transform: uppercase; font-size: 12px; padding: 10px 20px; }
+	.box-home figure:hover figcaption { bottom: 0; transition: ease-in-out 0.5s; -moz-transition: ease-in-out 0.5s; -webkit-transition: ease-in-out 0.5s; -o-transition: ease-in-out 0.5s; }
+	
+	.box-home .data{background:url(../img/pattern_incentive.png) repeat;width: 30%;height: 30px;border-radius: 10px 10px 0px 0px;}
+	.box-home .data p{padding: 10px;color:white;}
+	.box-home .redes{background: url(../img/papel_pattern_b.png)repeat; width: 40%;height: 30px;border-radius: 0px 0px 10px 10px; overflow: hidden;}
+	.box-home .redes ul{text-align: center;}
+	.box-home .redes li{display: inline-block;}
+	.box-home .redes li span{font-size: 20px; padding: 10px;}
+	.facebook a,
+		.twitter a,
+		.google-plus a {
+			display: block;
+			width: 100%;
+			color: rgb(75, 110, 168) !important;
+		}
+		.twitter a {
+			color: rgb(79, 213, 248) !important;
+		}
+		.google-plus a {
+			color: rgb(221, 75, 57) !important;
+		}
+		.facebook:hover a {
+			color: rgb(255, 255, 255) !important;
+			background-color: rgb(75, 110, 168) !important;
+		}
+		.twitter:hover a {
+			color: rgb(255, 255, 255) !important;
+			background-color: rgb(79, 213, 248) !important;
+		}
+		.google-plus:hover a {
+			color: rgb(255, 255, 255) !important;
+			background-color: rgb(221, 75, 57) !important;
+		} 
+}
+/***************************************************************************************
+  	EVENTOS HOME
+****************************************************************************************/
+.eventos{
+	h2{color:$Branco;}
+	.box-evento{
+		height:150px;
+		margin-bottom:20px;
+		.data{
+			background: url(../img/pattern_incentive.png) repeat;
+			border-radius: 10px 0px 0px 10px;
+			height: 100%;
+			p{
+				font-size: 24pt;
+			    font-weight: 900;
+			    line-height: 6;
+			    -webkit-transform: rotate(-90deg);
+			    -o-transform: rotate(-90deg);
+			    -moz-transform: rotate(-90deg);
+			    color: $Branco;
+			}
+		}
+		.meio{
+			height: 100%;
+			background: url(../img/slide.jpg)no-repeat center;
+			background-size:cover; 
+			padding: 0px;
+			&:hover{
+			.caption{
+				opacity: 1;
+				}
+			}
+			.caption-text{
+				z-index: 10;
+				color: #fff;
+				position: relative;
+				text-align: center;
+				width: 100%;
+				bottom:15px;
+				h3{font-size:12px;}
+			}
+			.caption{
+				position: absolute;
+				-webkit-transition:all 0.3s ease-in-out;
+				-moz-transition:all 0.3s ease-in-out;
+				-o-transition:all 0.3s ease-in-out;
+				-ms-transition:all 0.3s ease-in-out;
+				transition:all 0.3s ease-in-out;
+				width: 100%;
+				opacity:0;
+				.blur{
+					background-color: rgba(0,0,0,0.7);
+					height: 152px;
+					z-index: 5;
+					position: absolute;
+					width: 100%;
+				}
+			}
+		}
+		.compartilhe{
+			height: 100%;
+			background: url(../img/papel_pattern_b.png)repeat;
+			border-radius: 0px 10px 10px 0px;
+			padding: 0px;
+			overflow:hidden;
+			ul{text-align: center;margin-top: 15px;}
+			li{display: inline-block;padding: 0px;width:100%; }
+			li span{font-size: 20px; padding: 10px;}
+			.facebook a,
+			.twitter a,
+			.google-plus a {
+				display: block;
+				width: 100%;
+				color: rgb(75, 110, 168) !important;
+			}
+			.twitter a {
+				color: rgb(79, 213, 248) !important;
+			}
+			.google-plus a {
+				color: rgb(221, 75, 57) !important;
+			}
+			.facebook:hover a {
+				color: rgb(255, 255, 255) !important;
+				background-color: rgb(75, 110, 168) !important;
+			}
+			.twitter:hover a {
+				color: rgb(255, 255, 255) !important;
+				background-color: rgb(79, 213, 248) !important;
+			}
+			.google-plus:hover a {
+				color: rgb(255, 255, 255) !important;
+				background-color: rgb(221, 75, 57) !important;
+			} 
+		}
+	}
+	
+}
+
+/***************************************************************************************
+  PAGE
+  ****************************************************************************************/		
+.page{
+	article{
+		background:url(../img/papel_pattern_d.png)repeat;
+		width: 100%;
+		webkit-box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);
+	    -moz-box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);
+	    box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);
+	    border-radius: 10px;
+	    padding: 10px;
+	    .redes{
+			li{
+				display:inline-block;
+			}
+			.facebook{span{color: rgb(75, 110, 168) !important;}&:hover{opacity:0.8;}}
+			.twitter{span{color: rgb(79, 213, 248) !important;}&:hover{opacity:0.8;}}
+			.google-plus{span{color: rgb(221, 75, 57) !important;}&:hover{opacity:0.8;}}
+		}
+	}
+}  
+/***************************************************************************************
+  DOWNLOADS
+  ****************************************************************************************/
+.downloads{
+	.nav-tabs-dropdown {
+		display: none;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+	.well{
+		background:url(../img/papel_pattern_d.png)repeat !important;
+	}
+	.thumbnail{
+		background:url(../img/papel_pattern_d.png)repeat !important;
+	}
+	.nav-pills>li.active>a{
+		background: url(../img/pattern_incentive.png) repeat !important;
+    	border: none;
+	}
+}  
+/***************************************************************************************
+  SOCIAL
+  ****************************************************************************************/
+.simula { position: fixed; z-index: 999; /* left: -260px; */ top: 140px; }
+.simula li:hover { right: 10px; position: relative; }
+.simula li.face { background: #4867aa; }
+.simula li.you { background: #df4b38; }
+.simula li.tw { background: #55acee; }
+.simula li.ins { background: #8f3c1e; }
+.simula li i { padding: 20px; color: white; }
+
+/***************************************************************************************
+  BREAD
+  ****************************************************************************************/
+.bread{
+	margin-bottom: 20px;
+}
+
+/***************************************************************************************
+  PRE FOOTER
+****************************************************************************************/
+.prefooter{
+		margin-top: 60px; 
+		background: url(../img/grama.png); 
+		height: 85px;
+		img{display: block; margin: 0px auto;}
+}
+
+
+
+/***************************************************************************************
+  FOOTER
+  ****************************************************************************************/
+footer{
+	padding-top:25px;
+	z-index: 9999999;position: relative;min-height: 145px;
+	background: url(../img/papel_pattern_b.png)repeat !important;
+	-webkit-box-shadow: 0px -3px 5px 0px rgba(50, 50, 50, 0.75);-moz-box-shadow:0px -3px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:0px -3px 5px 0px rgba(50, 50, 50, 0.75);
+	input[type="text"]{height: 30px; margin-top: 6px;text-indent: 15px;border-radius:3px;opacity: 0.6;border:solid 1px;}
+	input[type="email"]{height: 30px;border-radius:3px;opacity: 0.6;text-indent: 15px;margin-top:6px;border:solid 1px;}
+	input[type="submit"]{border:none;width: 65px; height: 30px;position: relative;font-family: 'Museo500-Regular-webfont';background:url(../img/pattern_incentive.png)repeat !important; color:$Branco; border-radius:4px; }
+	h2{
+		color: #686868;
+	    font-size: 18px;
+	    font-family: 'Museo500-Regular-webfont';
+	    margin-top: 0px;
+	}
+}
+
+
+
+

@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*
+Theme Name: Escoteiros do Brasil
+Theme URI: www.escoteiros.org.br
+Description: Escoteiros do Brasil - EducaþÒo e lazer para crianþas e jovens
+Author: Escoteiros do Brasil - ComissÒo Nacional de Imagem e ComunicaþÒo
+Author URI: Escoteiros do Brasil - ComissÒo Nacional de Imagem e ComunicaþÒo
+*/
+
+
+/* Slider*/
+.slider-noticia{padding: 0;}
+
+
+.width-full-box{ background: transparent; padding: 0 0; margin-top: 30px;}
+.title-box h4{background: #165572; text-transform: uppercase;
+        color: #fff; padding: 12px; border-radius: 5px;
+        border-bottom: 5px solid #2AB6F7; margin: 5px 0;}
+.iten-noticias img{opacity: 0.9; height: 200px;}
+.iten-noticias img:hover{opacity:  1.0;
+    -webkit-box-shadow: 0 0 100px rgba(0,254,238,.6), inset 0 0 100px rgba(255,255,255,1);  
+    -moz-box-shadow: 0 0 100px rgba(55,55,55,.6), inset 0 0 20px rgba(255,255,255,1); 
+    -webkit-transform: scale(1.1) rotateZ(3deg);
+    -ms-transform: scale(1.1) rotateZ(3deg);
+    transform: scale(1.1) rotateZ(3deg);
+    box-shadow: inset 0 0 0 25px #53a7ea;
+    -moz-box-shadow: 5px 5px 5px #bfebf7;
+    -webkit-box-shadow: 5px 5px 5px #000;}
+.iten-noticias{padding: 20px;}
+.iten-noticias span{text-transform: uppercase; 
+        color: #fff; font-weight: bold; font-size: 12px;
+        padding: 5px 0; display: inline-block;}
+.iten-noticias h1{margin: 0; font-size: 18px;}
+.iten-noticias h1 a{color: #fff;}
+
+
+
+.iten-videos{padding: 20px;}
+.iten-videos h3{color: white; font-size: 19px; text-align: center;}
+.hoverzoom {
+position: relative;
+width: 350px;
+overflow: hidden;
+}
+.hoverzoom > img {
+width: 100%; 
+border-radius: 2px;
+-webkit-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+}
+.hoverzoom:hover > img {
+-webkit-transform: scale(1.5);
+-moz-transform: scale(1.5);
+-ms-transform: scale(1.5);
+-o-transform: scale(1.5);
+transform: scale(1.5);
+}
+.hoverzoom .retina{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0;    
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);    
+border-radius: 2px;
+text-align: center;
+padding: 30px;
+-webkit-transition:  all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-moz-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-ms-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+-o-transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000);
+transition: all .8s cubic-bezier(.190, 1.000, .220, 1.000); 
+}
+.hoverzoom:hover .retina {
+opacity: 1;
+box-shadow: inset 0 0 100px 50px rgba(0,0,0,.5);
+}
+.hoverzoom .retina p {
+color: #fff;
+}
+.hoverzoom .retina a {
+display: block;
+width: 150px;
+background: #6fc5e9;
+border: 1px solid #59afd4;
+border-radius: 4px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+padding: 10px 15px;
+margin: 16px auto 0;
+}
+
+
+
+
+.media-left{opacity: 0.9;}
+.media-left:hover{-webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1); transform: scale(1.1);
+        opacity: 1.0; -webkit-transform: scale(1.1) rotateZ(-1deg);
+    -ms-transform: scale(1.1) rotateZ(-1deg);
+    transform: scale(1.1) rotateZ(-1deg); }
+
+
+#posts{background-color: transparent;}
+
+.width-full-box2{background: green; padding: 30px 0; margin-top: 30px;}
+.iten-rodape{}
+.iten-rodape span{text-transform: uppercase; 
+        color: #900; font-weight: bold; font-size: 12px;
+        padding: 5px 0; display: inline-block;}
+.iten-rodape h1{font-size: 20px; text-align: center; vertical-align: middle; margin-top: 10px;}
+.iten-rodape h1 a{color: #fff;}
+.iten-rodape h1 a:link{text-decoration: none;}
+.iten-rodape h4{margin: 0; font-size: 19px; color: #000; text-align: center; margin-bottom: 10px;}
+.iten-rodape img{opacity: 0.9;}
+.iten-rodape img:hover{opacity: 1.0;}
+
+
+
+
+.social {
+    z-index: 801;
+    position: fixed;
+    top: 27%;
+    left: 1%;
+    padding: 0;
+    margin: 0;
+    font-size: 110%;
+    width:2.6%;
+}
+.social ul {
+    background: transparent;
+}
+.social ul:hover{
+    background: transparent;
+}
+.social ul li {
+    list-style: none outside none;
+    display: block;
+    background: transparent;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
+.social i {
+    width:100%;
+    min-width: 50px;
+    height: 100%;
+    min-height: 50px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 12px;
+    -webkit-transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+.social .fa-facebook:hover {
+    background: #4060A5;
+    border: 1px solid white;
+}
+.social .fa-twitter:hover {
+    background: #00ABE3;
+    border: 1px solid white;
+}
+.social .fa-google-plus:hover {
+    background: #e64522;
+    border: 1px solid white;
+}
+.social .fa-instagram:hover {
+    background: #FF00BF;
+    border: 1px solid white;
+}
+#social-collapse:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: none;
+    position: relative;
+    color: transparent;
+}
+#social-collapse:after {
+    content: "\f067";
+}
+
+

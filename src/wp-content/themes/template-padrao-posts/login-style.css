@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+/* Custom Login Styles */
+
+html, body {
+	width:100%;
+	font-size:14px;
+	color:#000;
+	background:url(img/bkg.png)center bottom fixed;
+	overflow-x:hidden;
+}
+
+/* logo */
+.login h1 a { background: url(img/logo_footer.png) no-repeat; background-size:auto; width: 318px; height: 145px; margin:0 auto}
+
+/* messages */
+.message { background:url(img/papel_pattern_d.png); color:#C00; border-left: 4px solid #006400 !important; }
+.login #login_error { background-color:#fff; border-color:#c00; color:#c00}
+.login .button-primary{border-color: #006400 !important;background: #006400 !important;}
+
+/* login form */
+.login form{background:url(img/papel_pattern_d.png);border-radius: 10px;-webkit-box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);
+-moz-box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);box-shadow: 0px 0px 20px 5px rgba(1, 0, 2, 0.55);}
+.login label { color:#363636 }
+.login input { color:#363636 }
+.login .button-primary { border-color:#287DB3; font-weight: bold; color: white; background: #287DB3; text-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0; }
+
+/* links below login forms */
+.login #nav, .login #backtoblog {text-shadow: #ccc 0 1px 0!important;padding: 8px;}
+.login #nav a, .login #backtoblog a {color:#fff!important; text-decoration:none;text-shadow: 0px 0px 4px rgba(1, 0, 2, 0.75);}
+.login #nav a:hover, .login #backtoblog a:hover {color:#CCC!important;}
+
